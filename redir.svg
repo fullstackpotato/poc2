@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" onload="redir()">
+  <script>
+    function redir() {
+
+      var cS = document.location.search;
+      var sP = new URLSearchParams(cS);
+      var url = sP.get('url');
+      var w = sP.get('w');
+
+      if (url !== null) {
+
+         if (w !== null) {
+            alert('You are going to be redirected to ' + url);
+         }
+
+         document.location = url;
+
+      } else { 
+
+         alert('You are going to be redirected to https://google.com');
+         document.location = '//google.com'
+
+      }
+    }
+  </script>
+</svg>

@@ -1,0 +1,1 @@
+console.log("This console output is a test that shows the successful execution of JavaScript on the domain: " + document.domain + ". This script was loaded remotely from: " + document.currentScript + ".");
